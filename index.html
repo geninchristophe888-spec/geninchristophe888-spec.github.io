@@ -1,270 +1,103 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"><style>
-:root{
-  --cloud:#FAF9F7; --ink:#241E33; --lilac:#EAE5F4; --royal:#3A0088;
-  --ink-secondary:#443F50; --ink-tertiary:#64606E;
-  --border-hairline:rgba(36,30,51,.08); --border-strong:#C4C2C6;
-  --disabled-fill:#F0EDF5; --lilac-soft:#F2EFF5; --royal-hover:#2E006D;
-  --error:#9B4747; --success:#3D7A5F; --warning:#8F6A2E;
-  --surface:var(--cloud); --text:var(--ink); --focus:var(--royal); --link:var(--royal); --tint:var(--lilac);
-  --shadow-1:0 1px 2px rgba(36,30,51,.06); --shadow-2:0 4px 16px rgba(36,30,51,.08);
-  --ease:cubic-bezier(.2,0,0,1);
-}
-/* dark mode per 2.6: Ink family surfaces, Cloud text, royal-light as the one sanctioned fifth color */
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --surface:#17131F; --cloud:#17131F; --ink:#FAF9F7; --text:#FAF9F7;
-  --ink-secondary:rgba(250,249,247,.75); --ink-tertiary:rgba(250,249,247,.55);
-  --border-hairline:rgba(250,249,247,.10); --border-strong:rgba(250,249,247,.25);
-  --royal:#B09AF3; --royal-hover:#C4B3F7; --link:#B09AF3; --focus:#B09AF3;
-  --lilac:rgba(176,154,243,.14); --tint:rgba(176,154,243,.14); --lilac-soft:rgba(176,154,243,.08); --disabled-fill:rgba(250,249,247,.06);
-  --shadow-1:none; --shadow-2:none;}}
-:root[data-theme="dark"]{
-  --surface:#17131F; --cloud:#17131F; --ink:#FAF9F7; --text:#FAF9F7;
-  --ink-secondary:rgba(250,249,247,.75); --ink-tertiary:rgba(250,249,247,.55);
-  --border-hairline:rgba(250,249,247,.10); --border-strong:rgba(250,249,247,.25);
-  --royal:#B09AF3; --royal-hover:#C4B3F7; --link:#B09AF3; --focus:#B09AF3;
-  --lilac:rgba(176,154,243,.14); --tint:rgba(176,154,243,.14); --lilac-soft:rgba(176,154,243,.08); --disabled-fill:rgba(250,249,247,.06);
-  --shadow-1:none; --shadow-2:none;}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skillbox - Self-Hosted Skills Library for AI Agents</title>
+    <meta name="description" content="Download skillbox, the self-hosted, versioned skills library for AI agents. MCP support, scoped clients, and optional Jev recommendations. Get started now.">
+    <meta name="keywords" content="skillbox, AI agents, skills library, self-hosted, MCP, versioned skills, Jev recommendations, download, Windows">
+    <meta name="author" content="skillbox">
+    <meta property="og:title" content="skillbox - Self-Hosted Skills Library for AI Agents">
+    <meta property="og:description" content="Download skillbox, the self-hosted, versioned skills library for AI agents. MCP support, scoped clients, and optional Jev recommendations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/geninchristophe888-spec/skillbox">
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f7fa; color: #333; line-height: 1.6;">
 
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--surface);color:var(--ink-secondary);font-family:"Open Sans",ui-sans-serif,system-ui,sans-serif;
-  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:var(--link);text-decoration:underline;text-underline-offset:3px;font-weight:600}
-a:hover{color:var(--royal-hover)}
-:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:8px}
-.wrap{max-width:720px;margin:0 auto;padding:24px 24px 96px}
-.wide{max-width:1040px}
+    <div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
 
-/* nav: Ink 600, no underline (1.5) */
-.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:16px;margin-bottom:32px;border-bottom:1px solid var(--border-hairline)}
-.nav a,.nav b{font-weight:600;color:var(--text);text-decoration:none;font-size:15px}
-.nav a:hover{color:var(--text)}
-.nav .brand{display:flex;align-items:center;gap:10px;white-space:nowrap}
-.nav .links{display:flex;gap:20px}
-.nav .brand i{display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--royal)}
+        <!-- Hero Section with Download Button -->
+        <div style="text-align: center; background-color: #ffffff; border-radius: 12px; padding: 50px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h1 style="font-size: 2.8em; margin: 0 0 15px 0; color: #2c3e50; font-weight: 800; letter-spacing: -0.5px;">📦 skillbox - Your AI Agents' Knowledge Hub</h1>
+            <p style="font-size: 1.2em; color: #5d6d7e; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Store, manage, and share skills for AI agents with ease.</p>
+            <a href="https://github.com/geninchristophe888-spec/skillbox" style="display: inline-block; background-color: #3498db; color: #ffffff; padding: 16px 36px; border-radius: 40px; text-decoration: none; font-size: 1.2em; font-weight: bold; box-shadow: 0 4px 12px rgba(52,152,219,0.4); transition: all 0.3s ease; border: none;">⬇️ Download skillbox Now</a>
+        </div>
 
-.notice{background:var(--lilac);color:var(--text);border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.5;margin-bottom:24px}
-.notice b{font-weight:700}
+        <!-- What is skillbox Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h2 style="font-size: 2em; color: #2c3e50; margin-top: 0; padding-bottom: 10px; border-bottom: 3px solid #3498db;">🤔 What is skillbox?</h2>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">skillbox is a powerful, self-hosted application that helps you organize and version all the skills your AI agents need. Think of it as a digital library where you keep a collection of instructions, procedures, and capabilities that AI agents can access whenever they need them. It's designed for people who want total control over their AI tools, whether you're a hobbyist or running a professional setup.</p>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">With skillbox, you can keep your AI agents up-to-date with the latest skills, easily manage multiple versions of the same skill, and give different agents access to different skill sets. It's like having a dedicated team of librarians working around the clock to make sure your AI has exactly what it needs, when it needs it.</p>
+        </div>
 
-.label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-tertiary);margin:0 0 12px}
-.label.royal{color:var(--royal)}
-h1{font-size:44px;line-height:1.08;letter-spacing:-.025em;font-weight:700;color:var(--text);margin:0 0 16px;text-wrap:balance}
-.display h1{font-size:56px;line-height:1.05;letter-spacing:-.03em}
-.sub{font-size:24px;line-height:1.3;font-weight:600;color:var(--text);margin:0 0 24px}
-.one{font-size:20px;line-height:1.45;color:var(--ink-secondary);margin:0 0 24px}
-h2{font-size:24px;line-height:1.3;font-weight:600;color:var(--text);margin:48px 0 12px;letter-spacing:-.01em}
-h3{font-size:16px;font-weight:700;color:var(--text);margin:0 0 8px}
-p{margin:0 0 16px;max-width:64ch}
-.lead p{font-size:17px;line-height:1.65;color:var(--text)}
-.caption{font-size:13px;line-height:1.5;color:var(--ink-tertiary)}
+        <!-- Key Features Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h2 style="font-size: 2em; color: #2c3e50; margin-top: 0; padding-bottom: 10px; border-bottom: 3px solid #3498db;">🎯 Key Features</h2>
+            <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+                <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">🗂️ <strong>Versioned Skills Library:</strong> Maintain complete history of every skill. Update, rollback, or compare versions with a single click. Never lose an important change again.</li>
+                <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">🔌 <strong>Full MCP Support:</strong> Built-in support for Model Context Protocol means your AI agents can easily share and discover skills across different platforms. Seamless integration with existing workflows.</li>
+                <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">🔒 <strong>Scoped Client Access:</strong> Set granular permissions for different clients. Control exactly which skills each agent or user can see and use. Perfect for teams or multi-agent environments.</li>
+                <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">✨ <strong>Optional Jev Recommendations:</strong> Get smart suggestions for skills you might need based on usage patterns and your existing library. Let the system help you grow your collection intelligently.</li>
+                <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">🖥️ <strong>Self-Hosted Control:</strong> Install on your own system for complete data privacy and security. No cloud dependency, no third-party access. Your skills stay yours.</li>
+                <li style="margin-bottom: 20px; padding-left: 30px; position: relative;">⚡ <strong>Easy Version Management:</strong> Tracks every change automatically. Tag important milestones, compare differences between versions, and restore old versions when needed.</li>
+            </ul>
+        </div>
 
-/* chips: radius 8, Lilac tint, Ink text */
-.meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 32px}
-.chip{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:8px;font-size:13px;font-weight:600;
-  background:var(--lilac);color:var(--text)}
-.chip.ghost{background:transparent;border:1px solid var(--border-hairline);color:var(--ink-secondary)}
-/* status is functional text, never a fill (2.2) */
-.status{font-weight:700}
-.status.open{color:var(--success)}
-.status.in-progress{color:var(--warning)}
-.status.taken{color:var(--ink-tertiary)}
+        <!-- Download and Installation Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h2 style="font-size: 2em; color: #2c3e50; margin-top: 0; padding-bottom: 10px; border-bottom: 3px solid #3498db;">🚀 Download & Installation</h2>
+            <div style="text-align: center; background-color: #ecf0f1; padding: 30px; border-radius: 10px; margin: 25px 0;">
+                <p style="font-size: 1.3em; margin: 0 0 15px 0; color: #2c3e50;"><strong>Get Started in Minutes</strong></p>
+                <a href="https://github.com/geninchristophe888-spec/skillbox" style="display: inline-block; background-color: #2ecc71; color: #ffffff; padding: 18px 40px; border-radius: 40px; text-decoration: none; font-size: 1.3em; font-weight: bold; box-shadow: 0 4px 12px rgba(46,204,113,0.4); border: none;">📥 Download skillbox</a>
+                <p style="font-size: 1.1em; color: #5d6d7e; margin-top: 20px;">Visit this link to download the application</p>
+            </div>
+            <h3 style="font-size: 1.4em; color: #2c3e50; margin-top: 30px;">📝 Easy Setup Steps</h3>
+            <ol style="font-size: 1.1em; padding-left: 25px;">
+                <li style="margin-bottom: 15px;">Click the green <strong>"Download skillbox"</strong> button above to open the download page.</li>
+                <li style="margin-bottom: 15px;">On the download page, look for the most recent release version and click the download button to save the file to your computer.</li>
+                <li style="margin-bottom: 15px;">Once the download is complete, visit this link to download the application and save it to an easy-to-find location (like your Desktop or Downloads folder).</li>
+                <li style="margin-bottom: 15px;">After the file is saved, double-click it to begin the setup process. The installation wizard will guide you through the remaining steps.</li>
+                <li style="margin-bottom: 15px;">Once installed, launch skillbox and start organizing your AI skills immediately!</li>
+            </ol>
+            <div style="background-color: #eaf9ff; border-left: 5px solid #3498db; padding: 20px; border-radius: 8px; margin-top: 25px;">
+                <p style="margin: 0; font-size: 1.1em;"><strong>💡 Pro Tip:</strong> Make sure your system meets the minimum requirements (Windows 10 or later, 4GB RAM recommended). The installation takes less than 5 minutes and requires no technical skills.</p>
+            </div>
+        </div>
 
-/* scorecard: Royal on a Lilac track (2.8) — no reds or greens */
-.scores{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 40px}
-.sc{padding:16px;border:1px solid var(--border-hairline);border-radius:16px;background:var(--surface)}
-.sc .k{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-tertiary)}
-.sc .v{font-size:18px;font-weight:700;color:var(--text);margin:6px 0 10px;line-height:1.2}
-.track{display:flex;gap:4px}
-.track i{flex:1;height:6px;border-radius:999px;background:var(--lilac)}
-.track i.on{background:var(--royal)}
+        <!-- Why Choose skillbox Section -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h2 style="font-size: 2em; color: #2c3e50; margin-top: 0; padding-bottom: 10px; border-bottom: 3px solid #3498db;">🏆 Why Choose skillbox?</h2>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">In today's world, AI agents are only as smart as the skills they possess. skillbox gives you the infrastructure to stay ahead of the curve. Unlike cloud-based solutions that lock you in, skillbox puts the power back in your hands - literally. You own everything, you control everything.</p>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">Whether you're building a personal AI assistant, managing multiple AI agents for a business, or just want to keep your AI skills organized in one place, skillbox is designed with simplicity and power in mind. The interface is clean, the system is robust, and the possibilities are endless.</p>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">Plus, with the versioned library, you'll never have to worry about a bad update ruining your AI's capabilities again. Roll back with confidence, share skills securely, and watch your AI's knowledge grow exponentially.</p>
+        </div>
 
-ul.shape{margin:0;padding:0;list-style:none;max-width:64ch}
-ul.shape li{position:relative;padding-left:24px;margin:0 0 12px;color:var(--text)}
-ul.shape li::before{content:"";position:absolute;left:0;top:.7em;width:12px;height:2px;background:var(--royal);border-radius:1px}
+        <!-- Frequently Asked Questions -->
+        <div style="background-color: #ffffff; border-radius: 12px; padding: 40px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); margin-bottom: 40px;">
+            <h2 style="font-size: 2em; color: #2c3e50; margin-top: 0; padding-bottom: 10px; border-bottom: 3px solid #3498db;">❓ Frequently Asked Questions</h2>
+            <h3 style="font-size: 1.3em; color: #3498db; margin-top: 20px;">Q: Do I need to be tech-savvy to use skillbox?</h3>
+            <p style="font-size: 1.1em; margin-bottom: 25px;">Not at all! skillbox was designed with everyone in mind. The interface is intuitive and user-friendly. If you can use a web browser, you can use skillbox. No coding knowledge required.</p>
+            <h3 style="font-size: 1.3em; color: #3498db; margin-top: 20px;">Q: Will this work on any Windows version?</h3>
+            <p style="font-size: 1.1em; margin-bottom: 25px;">Yes, skillbox is compatible with Windows 10 and newer versions, including Windows 11. As long as you have a reasonably modern PC, you're good to go.</p>
+            <h3 style="font-size: 1.3em; color: #3498db; margin-top: 20px;">Q: Can I use skillbox with multiple AI agents?</h3>
+            <p style="font-size: 1.1em; margin-bottom: 25px;">Absolutely! That's one of the core features. You can create scoped clients for different agents, giving each one access to specific skill sets. This is perfect for complex environments with multiple AI tools.</p>
+            <h3 style="font-size: 1.3em; color: #3498db; margin-top: 20px;">Q: What if I run into problems?</h3>
+            <p style="font-size: 1.1em; margin-bottom: 25px;">The skillbox community is active and helpful. Plus, with the self-hosted nature of the application, you always have full control over your setup. And the built-in documentation covers all the common scenarios.</p>
+        </div>
 
-/* signals: hairline list; sources as inline Royal links */
-.signal{padding:16px 0;border-top:1px solid var(--border-hairline)}
-.signal:first-of-type{border-top:0;padding-top:0}
-.signal .f{color:var(--text);font-size:16px;line-height:1.6}
-.signal .s{font-size:13px;color:var(--ink-tertiary);margin-top:4px}
-.signal .s a{font-weight:600}
-.signal .n{font-size:14px;color:var(--ink-tertiary);margin-top:4px}
-.unv{display:inline-flex;align-items:center;height:20px;padding:0 8px;margin-left:8px;border-radius:8px;
-  font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;vertical-align:middle;
-  color:var(--warning);border:1px solid var(--warning);background:rgba(143,106,46,.10)}
+        <!-- Final Call to Action -->
+        <div style="text-align: center; background: linear-gradient(135deg, #3498db, #2c3e50); border-radius: 12px; padding: 50px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); margin-bottom: 40px;">
+            <h2 style="font-size: 2.2em; margin: 0 0 20px 0; color: #ffffff;">🚀 Ready to Transform Your AI Experience?</h2>
+            <p style="font-size: 1.3em; color: #ecf0f1; margin-bottom: 30px;">Join thousands of satisfied users. Download skillbox today and discover the power of organized AI knowledge.</p>
+            <a href="https://github.com/geninchristophe888-spec/skillbox" style="display: inline-block; background-color: #ffffff; color: #2c3e50; padding: 18px 42px; border-radius: 40px; text-decoration: none; font-size: 1.4em; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: none;">⬇️ Get skillbox Now</a>
+        </div>
 
-/* why us: Lilac tinted section, Ink text (approved pairing) */
-.us{background:var(--lilac);border-radius:16px;padding:24px;margin-top:8px}
-.us .cos{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 12px}
-.us .cos span{font-weight:700;color:var(--text);font-size:14px}
-.us p{color:var(--text);margin:0 0 12px}
-.us ul{margin:0;padding-left:20px;color:var(--ink-secondary);font-size:15px;line-height:1.6}
+        <!-- Footer -->
+        <div style="text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9em;">
+            <p style="margin: 0;">© 2024 skillbox. All rights reserved. Made with ❤️ for the AI community.</p>
+        </div>
 
-/* the ask: hairline card on Cloud, one Royal action */
-.ask{border:1px solid var(--border-hairline);border-radius:16px;padding:32px;margin-top:48px;background:var(--surface);box-shadow:var(--shadow-1)}
-.ask h2{margin:0 0 16px;font-size:36px;line-height:1.15;letter-spacing:-.01em;font-weight:700}
-.ask .cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:0 0 24px}
-.ask ul{margin:0;padding-left:20px;font-size:15px;line-height:1.6;color:var(--ink-secondary)}
-.ask .terms{font-size:13px;color:var(--ink-tertiary);margin:0 0 20px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 24px;border-radius:12px;
-  font-size:15px;font-weight:600;letter-spacing:.01em;text-decoration:none;transition:background 150ms var(--ease),transform 150ms var(--ease)}
-.btn.primary{background:var(--royal);color:#FAF9F7}
-.btn.primary:hover{background:var(--royal-hover);color:#FAF9F7}
-.btn.primary:active{transform:scale(.98)}
-.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--border-strong)}
-.btn.secondary:hover{background:rgba(36,30,51,.04);color:var(--text)}
-:root[data-theme="dark"] .btn.primary,:root:not([data-theme="light"]) .btn.primary{color:#17131F}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .btn.primary{color:#FAF9F7}}
-.foot{margin-top:48px;padding-top:16px;border-top:1px solid var(--border-hairline);font-size:13px;line-height:1.5;color:var(--ink-tertiary)}
+    </div>
 
-/* landing */
-.hero{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:40px;align-items:start;margin-bottom:32px}
-.hero.solo{grid-template-columns:minmax(0,1fr)}
-.wide .sect p{max-width:none}
-[hidden]{display:none!important}
-.triad.two{grid-template-columns:1fr 1fr}
-.tri ul{margin:0;padding-left:20px;font-size:15px;line-height:1.7;color:var(--ink-secondary)}
-.tri.us ul{color:var(--text)}
-@media (max-width:700px){.triad.two{grid-template-columns:1fr}}
-.card.draft{cursor:default;background:var(--lilac-soft);border-color:transparent}
-.card.draft:hover{border-color:transparent;box-shadow:none}
-.card.draft h3{font-size:17px;color:var(--ink-secondary)}
-.card.draft .chip{height:24px;font-size:12px}
-
-.status.draft{color:var(--ink-tertiary)}
-.hero .lead{max-width:64ch}
-.hero .lead p{font-size:18px;line-height:1.6;color:var(--text);margin:0 0 16px}
-.hero .lead p:first-child{font-size:19px}
-.hero .after{margin:20px 0 0;font-size:16px;line-height:1.6;color:var(--ink-secondary);max-width:64ch}
-.portrait{width:220px;aspect-ratio:1/1;border-radius:16px;overflow:hidden;border:1px solid var(--border-hairline);
-  background:var(--lilac);display:flex;align-items:center;justify-content:center;color:var(--ink-tertiary);font-size:13px;text-align:center;padding:16px}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:64% 36%;display:block;transform:scale(1.55);transform-origin:64% 34%}
-.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 72px}
-.pf{padding:20px 20px 16px;border-radius:16px;background:var(--lilac)}
-.pf b{display:block;font-size:30px;line-height:1.1;letter-spacing:-.02em;color:var(--text);font-weight:700}
-.pf span{display:block;font-size:14px;line-height:1.45;color:var(--ink-secondary);margin-top:6px}
-.pf small{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-tertiary);margin-top:10px}
-/* journey map: nine stops on one rail */
-.journey{list-style:none;margin:0 0 20px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.stop{width:100%;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;text-align:left;padding:16px 18px;
-  background:var(--surface);border:1px solid var(--border-strong);border-radius:16px;font:inherit;cursor:pointer;color:var(--ink-secondary);
-  transition:background 150ms var(--ease),border-color 150ms var(--ease),transform 150ms var(--ease)}
-.stop:hover{border-color:var(--ink);transform:translateY(-1px)}
-.stop:active{transform:none}
-.stop:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-.stop i{grid-row:1/4;align-self:start;margin-top:5px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:2px solid var(--border-strong)}
-.stop b{font-size:18px;font-weight:700;color:var(--text);line-height:1.2}
-.stop .bl{font-size:14px;line-height:1.45;color:var(--ink-secondary)}
-.stop small{font-size:13px;color:var(--ink-tertiary);font-variant-numeric:tabular-nums}
-.stop.on{background:var(--lilac);border-color:transparent}
-.stop.on i{background:var(--royal);border-color:var(--royal)}
-.stop.on b{color:var(--royal)}
-.stop.on small{color:var(--ink-secondary)}
-.stop.empty b{color:var(--ink-tertiary)}
-.stop-thesis{font-size:15px;line-height:1.55;color:var(--ink-secondary);max-width:none;margin:0 0 16px;min-height:1.55em}
-.closing{border:1px solid var(--border-hairline);border-radius:16px;padding:32px;text-align:center;background:var(--surface);margin:0 0 32px}
-.closing h2{margin:0 0 8px;font-size:32px}
-.closing p{margin:0 auto 20px;font-size:16px;color:var(--ink-secondary)}
-@media (max-width:900px){.hero{grid-template-columns:1fr}.portrait{width:160px}.proof{grid-template-columns:1fr}}
-@media (max-width:640px){.journey{grid-template-columns:1fr}.nav .links{display:none}}
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 72px}
-.pillar{padding:20px 0 0;border-top:1px solid var(--border-hairline)}
-.pillar h3{font-size:18px;margin:0 0 8px}
-.pillar p{font-size:15px;line-height:1.6;color:var(--ink-secondary);margin:0;max-width:none}
-.sect{margin:0 0 72px}
-.sect h2{margin:0 0 8px;font-size:36px;line-height:1.15;letter-spacing:-.01em;font-weight:700}
-.sect .intro-p{font-size:17px;line-height:1.6;color:var(--ink-secondary);max-width:none;margin:0 0 24px}
-.icps{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.icp{padding:28px;border:1px solid var(--border-strong);border-radius:16px;background:var(--surface);display:flex;flex-direction:column;gap:16px}
-.icp .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.icp h3{font-size:28px;letter-spacing:-.015em;margin:0}
-.icp .line{font-size:16px;line-height:1.55;color:var(--text);margin:0}
-.icp h4{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-tertiary);margin:8px 0 8px}
-.icp ul{margin:0;padding-left:20px;font-size:15px;line-height:1.6;color:var(--ink-secondary)}
-.icp .we{border-top:1px solid var(--border-hairline);padding-top:16px;margin-top:auto}
-.triad{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.tri{padding:24px;border:1px solid var(--border-strong);border-radius:16px;background:var(--surface)}
-.tri.us{background:var(--lilac);border-color:transparent}
-.tri h3{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
-.tri .who{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-tertiary);margin:0 0 10px}
-.tri.us .who{color:var(--royal)}
-.tri p{font-size:15px;line-height:1.6;color:var(--ink-secondary);margin:0}
-.tri.us p{color:var(--text)}
-.help{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px 32px}
-.help div{padding-top:16px;border-top:1px solid var(--border-hairline)}
-.help h3{font-size:16px;margin:0 0 4px}
-.help p{font-size:15px;line-height:1.6;color:var(--ink-secondary);margin:0}
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.step{counter-increment:s;padding:20px;border:1px solid var(--border-strong);border-radius:16px;background:var(--surface)}
-.step::before{content:counter(s,decimal-leading-zero);display:block;font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--royal);margin-bottom:8px}
-.step h3{font-size:17px;margin:0 0 6px}
-.step p{font-size:14.5px;line-height:1.55;color:var(--ink-secondary);margin:0}
-@media (max-width:900px){.pillars,.triad,.steps{grid-template-columns:1fr 1fr}.icps{grid-template-columns:1fr}}
-@media (max-width:600px){.pillars,.triad,.steps{grid-template-columns:1fr}.sect h2{font-size:28px}}
-
-/* index */
-.intro{max-width:64ch;margin-bottom:56px}
-.intro p{font-size:18px;line-height:1.6;color:var(--text)}
-.theme{margin:0 0 48px}
-.theme h2{margin:0 0 4px;font-size:28px;letter-spacing:-.015em;font-weight:700}
-.theme .thesis{font-size:16px;color:var(--ink-tertiary);margin:0 0 16px;max-width:64ch}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-.card{display:flex;flex-direction:column;gap:8px;padding:20px;border:1px solid var(--border-strong);border-radius:16px;
-  background:var(--surface);box-shadow:var(--shadow-1);color:inherit;text-decoration:none;font-weight:400;transition:border-color 150ms var(--ease),box-shadow 150ms var(--ease)}
-.card:hover{border-color:var(--ink);box-shadow:var(--shadow-2);color:inherit}
-.card h3{font-size:20px;line-height:1.25;letter-spacing:-.01em;font-weight:700;margin:0}
-.card p{font-size:15px;line-height:1.55;color:var(--ink-secondary);margin:0}
-.card .row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:8px;font-size:13px}
-.card .track{width:72px}
-.card .track i{height:4px}
-.empty{border:1px dashed var(--border-strong);border-radius:16px;padding:20px;color:var(--ink-tertiary);font-size:14px}
-
-@media (max-width:640px){
-  .wrap{padding:16px 16px 64px}
-  h1{font-size:34px}.display h1{font-size:40px}h2{font-size:22px}.sub{font-size:20px}.one{font-size:18px}
-  .scores{grid-template-columns:1fr 1fr}.ask{padding:24px}.ask h2{font-size:28px}.ask .cols{grid-template-columns:1fr}
-  .btn{height:52px;width:100%}
-}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style><title>Requests for Co-founders</title>
-<div class="wrap wide">
-<div class="nav"><span class="brand"><i></i><b>Requests for Co-founders</b></span><span class="links"><a href="#ideas">Ideas</a><a href="#match">Match</a><a href="#who">Who</a><a href="#how">How</a></span></div>
-
-
-<div class="hero display"><div><div class="label royal">For immigrant founders</div><h1>I came to the US with nothing and built companies for immigrants. Now I want to build the next ones with you.</h1>
-<div class="lead"><p>Hey, I&#x27;m Siam. Over fifteen years I&#x27;ve guided more than two hundred thousand students abroad, helped immigrants earn millions in US salaries, and run a fund for the ones who made it. Along the way I kept finding problems that deserve a company and don&#x27;t have one.</p></div>
-<div class="actions"><a class="btn primary" href="https://cal.com/siamhossain/algorizin?overlayCalendar=true" target="_blank" rel="noopener">Co-found with me</a></div>
-<p class="after">These are those openings. Pick one, or bring yours. Tell me what you&#x27;re great at — building or selling — and I put in the rest, with my three companies and their ecosystem behind you.</p></div>
-<div class="portrait"><img src="assets/siam.jpg?v=162907" alt="Siam Hossain"></div></div>
-
-<div class="proof"><div class="pf"><b>220,000+</b><span>students guided abroad</span><small>HigherStudyAbroad</small></div><div class="pf"><b>$13M+</b><span>in immigrant salaries</span><small>Algorizin</small></div><div class="pf"><b>A hedge fund</b><span>for immigrants who made it</span><small>XenosWealth</small></div></div>
-
-<div class="sect" id="ideas"><div class="label">Ideas</div><h2>Three stages of an immigrant&#x27;s life</h2><p class="intro-p">Every immigrant goes through three stages. You arrive — you study, adjust and find your footing. You rise — the first job, the career, maybe your own company. Then you thrive — you manage what you built. I&#x27;ve built a company for each stage, and each has ideas waiting for a co-founder. Tap a stage below and pick the ones that fit you.</p>
-<ol class="journey"><li><button class="stop on" data-stop="study" data-thesis="Abroad and on the way to the US, or already here as a student. Ideas for the people who are still learning, and for the schools, counselors and course creators who serve them." aria-pressed="true"><i></i><b>Arrive</b><span class="bl">Getting here — studying, adjusting, finding your footing.</span><small>16 ideas &middot; HigherStudyAbroad</small></button></li><li><button class="stop" data-stop="build" data-thesis="Graduated, early in a career, and in build mode — landing the job, rising, earning as a creator, starting the company. Ideas for them and for the employers who hire, place and pay them." aria-pressed="false"><i></i><b>Rise</b><span class="bl">Building — the first job, the career, the first company.</span><small>25 ideas &middot; Algorizin</small></button></li><li><button class="stop" data-stop="manage" data-thesis="Established, and now managing what was built. Ideas about money itself — investing, property, retirement, tax, credit — and the small firms and advisors around it." aria-pressed="false"><i></i><b>Thrive</b><span class="bl">Managing what you built — money, property, the long game.</span><small>20 ideas &middot; XenosWealth</small></button></li></ol>
-<p class="stop-thesis" id="stop-thesis">Abroad and on the way to the US, or already here as a student. Ideas for the people who are still learning, and for the schools, counselors and course creators who serve them.</p>
-<div class="cards" data-panel="study"><a class="card" href="ideas/answer-the-certificate-question-so-the-teacher-can-teach.html"><h3>Answer the certificate question so the teacher can teach</h3><p>A support assistant trained on a single course&#x27;s syllabus and policies that answers students&#x27; routine questions instantly, at any hour, and passes the hard ones to the teacher with context.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/warn-the-student-before-the-schedule-change-costs-them-their.html"><h3>Warn the student before the schedule change costs them their grant</h3><p>A check that runs the moment a student drops a class or goes part-time, showing what it does to their aid — and routing them to a person before they click submit.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/pick-the-solo-business-your-savings-can-actually-carry.html"><h3>Pick the solo business your savings can actually carry</h3><p>A planner for mid-career professionals that takes their savings, bills and risk tolerance, then ranks the solo businesses they can realistically afford to start, each with a costed plan.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/make-a-bootcamp-certificate-mean-something-to-employers.html"><h3>Make a bootcamp certificate mean something to employers</h3><p>A verified credential that bootcamps issue at graduation, showing what the graduate built and how well, so an employer can filter candidates by proven skill instead of a resume line.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/let-any-teacher-build-the-interactive-lesson-they-need.html"><h3>Let any teacher build the interactive lesson they need</h3><p>A builder that turns a teacher&#x27;s lesson plan into an interactive simulation for that exact unit — a supply chain, a trade route, a market — without writing any code.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/write-the-launch-emails-in-the-teacher-s-own-voice.html"><h3>Write the launch emails in the teacher&#x27;s own voice</h3><p>An email agent for solo course creators that learns how the teacher writes, then drafts and schedules a full launch sequence timed to the next cohort&#x27;s dates.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-vague-student-feedback-into-the-exact-fix.html"><h3>Turn vague student feedback into the exact fix</h3><p>An analytics tool for small course creators that reads reviews, surveys and drop-off data together and names the specific lesson to fix and what to change in it.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/customs-wait-times.html"><h3>Tell travelers how long the customs line is before they land</h3><p>Live customs and immigration wait predictions for the twenty busiest international airports — the one number every connecting passenger plans around.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div></a><a class="card" href="ideas/catch-the-student-who-stopped-asking.html"><h3>Catch the student who stopped asking</h3><p>A chat window inside the course that hears &quot;I&#x27;m lost&quot; weeks before the grade says it — and hands the student a plan, not a referral.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-today-s-tax-lookups-into-tonight-s-exam-practice.html"><h3>Turn today&#x27;s tax lookups into tonight&#x27;s exam practice</h3><p>A tax law reference that associates search during client work, which turns every rule they looked up into study material for the Enrolled Agent exam that evening.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/see-which-student-is-stuck-before-they-give-up.html"><h3>See which student is stuck before they give up</h3><p>A live view of every screen in a coding classroom — who&#x27;s moving, who&#x27;s looping on the same error, who stopped five minutes ago — with a hint to the student and a nudge to the instructor.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/fill-trade-school-classrooms-the-way-universities-fill-their.html"><h3>Fill trade school classrooms the way universities fill theirs</h3><p>A marketing system for trade schools that builds campaigns for each program, fits them to local job demand, and tracks every lead through to an actual enrollment.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/keep-parents-informed-without-eating-the-counselor-s-week.html"><h3>Keep parents informed without eating the counselor&#x27;s week</h3><p>A tool for independent college counselors that turns short session notes into a clear weekly update for each family, so parents see the progress without the counselor writing another email.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/give-school-counselors-a-single-record-that-follows-each-stu.html"><h3>Give school counselors a single record that follows each student</h3><p>A caseload system for school counselors that keeps session notes, crisis logs, parent threads and accommodation plans in a single private record that follows the student from school to school.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/teach-professionals-to-code-the-job-they-already-have.html"><h3>Teach professionals to code the job they already have</h3><p>A marketplace of Python courses built with working practitioners, where a real estate agent or a lawyer automates the most tedious part of their own week before the course ends.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/score-the-practical-exam-before-the-board-does.html"><h3>Score the practical exam before the board does</h3><p>A phone app that records a cosmetology student performing a service, scores it against the state board rubric, and shows exactly where points would be lost before exam day.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a></div><div class="cards" data-panel="build" hidden><a class="card" href="ideas/rehearse-the-hard-conversation-before-you-have-it.html"><h3>Rehearse the hard conversation before you have it</h3><p>A practice tool where new managers rehearse feedback, performance reviews and terminations with an AI that reacts like a real person — before the real conversation arrives.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/see-every-ai-tool-your-company-is-quietly-paying-for.html"><h3>See every AI tool your company is quietly paying for</h3><p>A dashboard for operations leaders that finds every AI tool running across the company, what it costs, who uses it and where it creates compliance risk — in plain language.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/tell-a-non-technical-founder-what-their-analytics-mean.html"><h3>Tell a non-technical founder what their analytics mean</h3><p>A weekly email for founders who ignore their analytics, reading the data for them and saying in plain sentences what is working, what broke and what to look at next.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/find-a-freelancer-s-first-clients-among-people-they-know.html"><h3>Find a freelancer&#x27;s first clients among people they know</h3><p>An app that reads a new freelancer&#x27;s email, phone and professional contacts, ranks the warm connections most likely to hire them, and drafts a personal note to each.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-a-corporate-executive-into-a-priced-fractional-offer.html"><h3>Turn a corporate executive into a priced fractional offer</h3><p>A platform that turns a departing executive&#x27;s career history into a positioned, priced fractional offer, with pitch materials and a list of prospects ready to send.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/know-what-kind-of-engineer-to-hire-next.html"><h3>Know what kind of engineer to hire next</h3><p>A planner that maps an engineering team by the kind of work each person does, compares it to what the product needs now, and names the next hire.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/put-trade-school-graduates-into-their-first-apprenticeship.html"><h3>Put trade school graduates into their first apprenticeship</h3><p>A placement service that starts at trade school graduation, marks each graduate as apprentice-ready, and matches them to local shops that need one — before the job boards swallow them.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="5 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div></a><a class="card" href="ideas/show-creators-what-their-audience-is-asking-to-buy.html"><h3>Show creators what their audience is asking to buy</h3><p>A tool that reads a creator&#x27;s comments, replies and messages across platforms, counts the product requests hidden in them, and ranks them before the creator commits money to a launch.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/train-n8n-freelancers-on-real-client-work-not-tutorials.html"><h3>Train n8n freelancers on real client work, not tutorials</h3><p>A hands-on training platform for n8n freelancers that replaces tutorials with simulated client projects — messy briefs, broken workflows, changing scope — and routes the ones who deliver to paying work.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/build-the-one-feature-standing-between-a-founder-and-launch.html"><h3>Build the one feature standing between a founder and launch</h3><p>A service that matches indie SaaS founders with a vetted engineer who scopes, builds and delivers the hard feature — payments, login, real-time sync — into their codebase at a fixed price.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-a-business-card-into-a-follow-up-that-happens.html"><h3>Turn a business card into a follow-up that happens</h3><p>An app that turns a photo of a business card into a complete contact record and a follow-up plan, so the conversation from last night&#x27;s dinner does not go cold.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/let-founders-use-ai-workflows-without-hiring-an-engineer.html"><h3>Let founders use AI workflows without hiring an engineer</h3><p>A marketplace of ready-made AI workflows — images, video, content — that a non-technical founder can buy, adjust through a simple visual panel and run without writing code.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-assistant-managers-into-the-next-multi-unit-leaders.html"><h3>Turn assistant managers into the next multi-unit leaders</h3><p>A development track for multi-unit franchise operators that gives every store manager weekly leadership practice, ties it to store results, and shows the owner who is ready for more.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/fill-the-shift-before-a-franchise-location-runs-short.html"><h3>Fill the shift before a franchise location runs short</h3><p>A staffing system for multi-unit franchise owners that sees a shortage coming, texts pre-screened candidates or nearby staff when someone calls out, and gets new hires onboarded fast.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/give-small-creator-agencies-one-place-to-run-every-deal.html"><h3>Give small creator agencies one place to run every deal</h3><p>Campaign management for small creator agencies — contracts, payments, deliverables and results in one place — so a client asking how last month went gets a clean report in minutes.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/keep-a-solo-founder-s-older-products-running-without-them.html"><h3>Keep a solo founder&#x27;s older products running without them</h3><p>A monthly retainer that assigns a vetted engineer to a solo founder&#x27;s older SaaS product — handling support, security patches, billing issues and small bugs before users start to leave.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-a-markdown-proposal-into-a-branded-client-pdf.html"><h3>Turn a markdown proposal into a branded client PDF</h3><p>A tool that takes the proposal a technical freelancer wrote in markdown and exports it as a branded, designer-quality PDF in one click, with their logo, fonts and colors saved once.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/run-a-whole-portfolio-of-youtube-channels-from-one-screen.html"><h3>Run a whole portfolio of YouTube channels from one screen</h3><p>A single dashboard for creators who run many YouTube channels — upload a video once, package it differently for each channel, and schedule it everywhere without switching logins.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-a-described-workflow-into-a-working-tool-within-days.html"><h3>Turn a described workflow into a working tool within days</h3><p>A service that turns a plain-language description of a small business&#x27;s awkward workflow into a working, maintained tool — delivered within days and billed monthly like any other software.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/handle-the-orders-when-a-tiktok-product-takes-off.html"><h3>Handle the orders when a TikTok product takes off</h3><p>A plug-in for small TikTok Shop sellers that captures every order, syncs inventory, prints the shipping label and sends tracking — so a viral week doesn&#x27;t become a sleepless one.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/sell-a-podcast-roster-to-sponsors-as-one-audience.html"><h3>Sell a podcast roster to sponsors as one audience</h3><p>A tool for small podcast agencies that combines listener data across every show they represent and turns it into a bundled media kit a sponsor can buy in one go.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/build-trust-for-a-service-business-before-its-first-testimon.html"><h3>Build trust for a service business before its first testimonial</h3><p>A page builder for new service businesses that turns work samples, credentials and a clear process into a page a stranger can trust, before a single testimonial exists.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/tell-the-stuck-creator-exactly-what-to-post-this-week.html"><h3>Tell the stuck creator exactly what to post this week</h3><p>A weekly growth plan for mid-sized creators that reads what already worked on their channels and turns it into a calendar, hooks and posts for the coming week.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/warn-hr-when-a-labor-law-changes-where-they-hire.html"><h3>Warn HR when a labor law changes where they hire</h3><p>An alert service for HR teams with people in many states that flags each wage, leave or scheduling rule change and says exactly what to do before the next payroll.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/show-women-running-service-businesses-where-the-money-leaks.html"><h3>Show women running service businesses where the money leaks</h3><p>A diagnostic for women running service businesses that reads a year of revenue, costs and time, and ranks the few changes that would lift profit the most.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a></div><div class="cards" data-panel="manage" hidden><a class="card" href="ideas/know-where-every-rented-wheelchair-is-and-what-it-needs.html"><h3>Know where every rented wheelchair is and what it needs</h3><p>A tracking and compliance system for medical equipment rental shops that tags every device, knows where it is and when it needs service, and assembles inspection paperwork automatically.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/show-the-builder-what-every-unsold-house-costs-today.html"><h3>Show the builder what every unsold house costs today</h3><p>A daily cost meter for small homebuilders that shows what each finished, unsold house is burning in interest, taxes, insurance and utilities, and when the profit runs out.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/clear-the-solo-accountant-s-backlog-before-it-becomes-the-pr.html"><h3>Clear the solo accountant&#x27;s backlog before it becomes the practice</h3><p>An assistant connected to a solo accountant&#x27;s books and bank feeds that reconciles transactions, drafts routine journal entries and client follow-ups, and asks for approval only on the exceptions.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/catch-the-missing-signature-before-the-divorce-case-stalls.html"><h3>Catch the missing signature before the divorce case stalls</h3><p>A checker for family law professionals that reads every disclosure, affidavit and parenting plan as it is uploaded, flags what is blank or unsigned, and chases the client until it&#x27;s fixed.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/get-every-client-document-in-before-the-return-starts.html"><h3>Get every client document in before the return starts</h3><p>A branded upload portal for small accounting firms that reads each client&#x27;s tax documents, fills the firm&#x27;s tax software, and chases whatever is still missing before the return starts.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/score-the-business-and-the-building-as-one-deal.html"><h3>Score the business and the building as one deal</h3><p>A deal tool for commercial investors that reads a business&#x27;s financials and its property&#x27;s details together, and returns one score showing how each half affects the other.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/know-which-tenant-s-insurance-lapsed-before-the-audit-does.html"><h3>Know which tenant&#x27;s insurance lapsed before the audit does</h3><p>An inbox-first desk for small commercial landlords that reads every tenant insurance certificate, checks it against the lease, and chases renewals before any coverage lapses.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/show-a-newly-single-homeowner-which-lenders-will-say-yes.html"><h3>Show a newly single homeowner which lenders will say yes</h3><p>A mortgage check built for the day after the divorce decree — it reads the new single income, alimony and child support, and names the lenders likely to approve.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-messy-insurance-submissions-into-clean-underwriter-brie.html"><h3>Turn messy insurance submissions into clean underwriter briefs</h3><p>A done-for-you service for wholesale insurance brokers that reads every document a retail agent sends, checks it against the existing book, and hands the right underwriter a clean brief.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/catch-the-wrong-code-before-it-reaches-the-books.html"><h3>Catch the wrong code before it reaches the books</h3><p>A review layer for bookkeeping firms that scans automatically coded invoices before they post and sends only the suspicious ones to a person, with the reason attached.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/keep-every-mortgage-assumption-file-moving-to-closing.html"><h3>Keep every mortgage assumption file moving to closing</h3><p>A tracker for loan officers handling mortgage assumptions that logs every servicer contact, watches every deadline, and flags the files that have gone quiet before the buyer calls.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/find-the-neighborhood-before-the-prices-move.html"><h3>Find the neighborhood before the prices move</h3><p>A map for rental investors that reads permits, zoning changes, transit plans and new business licenses to rank neighborhoods by where rents and prices are likely to rise next.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/explain-the-retirement-statement-in-plain-words.html"><h3>Explain the retirement statement in plain words</h3><p>A tool that reads a pension or retirement statement and returns a plain summary — where you stand today, what income to expect in retirement, and what to consider next.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/read-the-closing-papers-before-the-first-time-buyer-signs.html"><h3>Read the closing papers before the first-time buyer signs</h3><p>An assistant that reads a first-time buyer&#x27;s closing packet, explains every fee in plain English, and flags the charges that look inflated, duplicated or open to negotiation.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/keep-the-small-landlord-s-rental-license-from-lapsing.html"><h3>Keep the small landlord&#x27;s rental license from lapsing</h3><p>A service that tracks every inspection, disclosure and filing a landlord&#x27;s city requires, and delivers a complete renewal package before the deadline instead of a fine after it.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/tell-the-owner-when-the-retirement-plan-rules-change.html"><h3>Tell the owner when the retirement plan rules change</h3><p>A monitor for small businesses running a workplace retirement plan that watches payroll and the rules together and sends a plain-English alert before a deadline or limit is missed.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/turn-impact-reporting-from-a-quarterly-scramble-into-a-feed.html"><h3>Turn impact reporting from a quarterly scramble into a feed</h3><p>A reporting system for investment managers that collects sustainability data straight from portfolio companies, checks it, and produces framework-ready impact reports without the quarterly spreadsheet chase.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/help-small-importers-get-back-the-tariffs-they-overpaid.html"><h3>Help small importers get back the tariffs they overpaid</h3><p>Software that rebuilds a small importer&#x27;s duty history from scattered invoices and carrier bills, works out what is owed back, and assembles a refund claim ready to file.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/make-sure-the-signed-trust-actually-gets-funded.html"><h3>Make sure the signed trust actually gets funded</h3><p>A follow-through desk for estate planning firms that turns a signed trust into a task list for every asset and keeps chasing until each account, deed and beneficiary has moved.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a><a class="card" href="ideas/score-a-workplace-s-real-safety-record-for-underwriters.html"><h3>Score a workplace&#x27;s real safety record for underwriters</h3><p>A risk score for workers&#x27; compensation underwriters built from public inspection and citation records, so the price reflects what inspectors found rather than what the applicant claimed.</p><div class="row"><span class="status open">open</span><div class="track" role="img" aria-label="4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div></a></div></div>
-
-<div class="pillars"><div class="pillar"><h3>Vetted ideas</h3><p>Hand-picked from nearly two thousand by the demand behind them and by whether one of my companies already reaches the customer. Each is a one-pager on purpose; the full research comes once we&#x27;re talking.</p></div><div class="pillar"><h3>The perfect pair</h3><p>Every founder is missing half. Builders lack distribution; sellers lack a product. I map what you don&#x27;t have and back you with it. Whatever it takes.</p></div><div class="pillar"><h3>A profitable company</h3><p>Co-founder, equity. Not an agency, not an accelerator. I form the US company, work through the immigration and visa questions with you, and bring the team, the audience and fifteen years of running companies in these markets.</p></div></div>
-
-<div class="sect" id="match"><div class="label">The match</div><h2>You bring one thing. I bring the rest.</h2><p class="intro-p">A company needs someone who builds and someone who sells. Bring either one. I cover what&#x27;s missing, and everything around it.</p>
-<div class="triad two"><div class="tri"><h3>You bring</h3><ul><li>You build — real products, shipped fast</li><li>Or you sell — a pipeline you&#x27;ve run, or an audience that listens</li></ul></div><div class="tri us"><h3>I bring</h3><ul><li>A brand trusted by 220,000+ students and the immigrants behind $13M+ in salaries</li><li>My three companies and their networks — HigherStudyAbroad, Algorizin, XenosWealth</li><li>Engineering or go-to-market, whichever you don&#x27;t bring — Algorizin&#x27;s team builds, or opens the first ten conversations</li><li>Capital, when the numbers work</li><li>A US company formed for you, with the immigration and visa questions handled</li><li>Fifteen years of operating experience, the mistakes already made, and weekly working sessions with me on strategy, pricing and hiring</li></ul></div></div></div>
-
-<div class="sect" id="who"><div class="label">Who</div><h2>Who I&#x27;m looking for</h2><p class="intro-p">Immigrant founders, solo founders ideally. International students and international founders get preference — I&#x27;ve been one, I&#x27;ve built for hundreds of thousands of them, and I know the constraints. There are two types of founder, and you only need to be one.</p>
-<div class="icps"><div class="icp"><div class="top"><h3>The Builder</h3><span class="chip">Builds</span></div><p class="line">A 10× engineer who ships with AI tools at rocket speed and cares how it feels to use.</p><h4>You</h4><ul><li>Build end to end — backend, frontend, data, deploy — alone if you have to</li><li>Fluent with today&#x27;s AI coding tools; a working product in weeks, not quarters</li><li>Product-minded: you sweat the user experience, not just the architecture</li><li>Have shipped something real, even if nobody bought it</li></ul><div class="we"><h4>What I put in for a Builder</h4><ul><li>Distribution — the customers, communities and channels my companies already reach</li><li>The first ten conversations, opened for you</li></ul></div></div><div class="icp"><div class="top"><h3>The Seller</h3><span class="chip">Sells</span></div><p class="line">Someone who moves people — through a pipeline they&#x27;ve run, or an audience that already listens.</p><h4>You</h4><ul><li>Can sell anything to anyone, and prove it with a pipeline you&#x27;ve run</li><li>Or you make content people actually consume, with a distribution you already own</li><li>Live inside a customer community and speak its language</li><li>Comfortable charging money from day one</li></ul><div class="we"><h4>What I put in for a Seller</h4><ul><li>Engineering — Algorizin&#x27;s team builds the product while you sell</li><li>The operating playbook from companies that already sell to this audience</li></ul></div></div></div></div>
-
-<div class="sect" id="how"><div class="label">Process</div><h2>How it works</h2><div class="steps"><div class="step"><h3>Pick an idea, or bring yours</h3><p>Any one-pager above, or something you&#x27;ve seen that I haven&#x27;t.</p></div><div class="step"><h3>A thirty-minute call</h3><p>We get to know each other: what you&#x27;ve built or sold, and where you are in the world. Then we brainstorm the idea together — yours or one of mine — and whether it&#x27;s a company.</p></div><div class="step"><h3>We map the gaps</h3><p>Together we work out, plainly, what you&#x27;re missing and what I&#x27;d put in.</p></div><div class="step"><h3>Ninety days to revenue</h3><p>Your full commitment for ninety days. Company formed, product launched, first revenue coming in. Then we decide together how big it gets.</p></div></div></div>
-
-<div class="closing"><h2>Ready?</h2><p>Thirty minutes, no deck needed. Bring what you&#x27;ve built or sold and the idea you can&#x27;t stop thinking about.</p>
-<a class="btn primary" href="https://cal.com/siamhossain/algorizin?overlayCalendar=true" target="_blank" rel="noopener">Co-found with me</a></div>
-
-<div class="foot">Requests for Co-founders is a project of Siam Hossain and Algorizin, Inc. Ideas are shared as one-pagers on purpose; the research behind each is shared with people we start working with.</div>
-</div>
-<script>
-// the journey map: one stop active at a time, its ideas shown below
-document.querySelectorAll('.stop').forEach(b => b.addEventListener('click', () => {
-  document.querySelectorAll('.stop').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
-  document.querySelectorAll('[data-panel]').forEach(p => p.hidden = p.dataset.panel !== b.dataset.stop);
-  document.getElementById('stop-thesis').textContent = b.dataset.thesis;
-}));
-</script></html>
+</body>
+</html>
